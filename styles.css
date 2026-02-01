@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.50%;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: antiquewhite;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 1rem;
+    
+}
+
+.todo-app {
+    background-color: #fff;
+    width: 100%;
+    max-width: 54rem;
+    padding: 4rem 3rem 7rem;
+    border-radius: 10px;
+    margin: 2rem auto 2rem;
+}
+
+h1 {
+    font-size: 3.2rem;
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+h1 img {
+    width: 100%;
+    max-width: 30px;
+    margin-left: 1rem;
+}
+
+.add {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.add-input {
+    flex: 1;
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+.search-div {
+    text-align: center;
+    width: 100%;
+    max-width: 5rem;
+    margin-bottom: 1.2rem;
+
+}
+
+.search-input {
+    padding: 0.5rem;
+    border-radius: 15px;
+    border: 2px solid rgb(22, 109, 109);
+}
+
+.add-button {
+    padding: 0.7rem 1.4rem;
+    background-color: rgb(77, 148, 136);
+    color: #ffffff;
+    border-radius: 30px;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 1.2rem 0.8rem 1.2rem 5rem;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 2.8rem;
+    width: 2.8rem;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 1.2rem;
+    left: 0.8rem;
+}
+
+.list-btn {
+    color: aliceblue;
+    background-color: red;
+    font-size: 1.4rem;
+    padding: 0.5px 1px;
+    float: right;
+    cursor: pointer;
+}
+
+.list-btn:hover {
+    background-color: rgb(95, 38, 38);
+}
+
+ul li.checked {
+    color: #002765;
+    text-decoration: line-through;
+    
+}
+
+ul li.checked::before {
+    background-image: url(images/checked.png);
+}
+
+/* ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.4rem;
+    text-align: center;
+} */

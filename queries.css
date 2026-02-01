@@ -1,0 +1,27 @@
+@media(max-width: 34rem){
+    .todo-app {
+        max-width: 30rem;
+        padding: 1.5rem 1rem 3rem;
+    }
+
+    .add {
+        padding-left: 0;
+    }
+
+    .search-div {
+        max-width: 3rem;
+    }
+
+    ul li {
+        font-size: 1rem;
+    }
+
+    ul li::before {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .add-input{
+        flex: 0;
+    }
+}
